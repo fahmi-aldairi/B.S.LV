@@ -1,0 +1,117 @@
+.login-cont {
+  background-image: url(../images/section-bg.png);
+  margin: 5rem 0rem;
+}
+.card {
+  background-color: transparent !important;
+}
+
+.login-btn {
+  background-image: linear-gradient(
+    to right,
+    #8b4403 0%,
+    #8b450386 51%,
+    #9e6a39 100%
+  );
+  padding: 12px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  box-shadow: 0 0 10px #8b4503b7;
+}
+.form-floating > label {
+  color: #8b4403 !important;
+}
+.FM:focus + label {
+  color: transparent;
+}
+
+.login-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.FM {
+  border: transparent !important;
+  border-radius: 0;
+  border-width: 2px !important;
+  border-bottom-style: solid !important;
+  border-image: linear-gradient(to right, #8b4403 0%, #8b4403 51%, #8b4403 100%)
+    1 !important;
+}
+
+.FM:focus {
+  box-shadow: 0 0 0 0.25rem rgb(116 31 95 / 0%) !important;
+}
+
+.form-check-input {
+  border-radius: 0 !important;
+  width: 18px;
+  height: 18px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.form-check-input:checked {
+  background-color: #8b4403 !important;
+  border-style: solid !important;
+  border-image: linear-gradient(to right, #8b4403 0%, #8b4403 51%, #8b4403 100%)
+    1 !important;
+}
+.form-check-label {
+  color: #8b4403;
+}
+
+.form-check-input:hover {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-image: linear-gradient(to right, #8b4403 0%, #8b4403 51%, #8b4403 100%)
+    1 !important;
+}
+
+.form-check-input:focus {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-image: linear-gradient(to right, #8b4403 0%, #8b4403 51%, #8b4403 100%)
+    1 !important;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+
+.sda::after {
+  content: "";
+  width: calc(50% - 200px);
+  height: 1px;
+  position: absolute;
+  background: #8b4403;
+  left: calc(50% + 60px);
+  bottom: 120px;
+}
+.sda::before {
+  content: "";
+  width: calc(50% - 200px);
+  height: 1px;
+  position: absolute;
+  background: #8b4403;
+  left: 140px;
+  bottom: 120px;
+}
+
+@media (max-width: 426px) {
+  #regForm {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #eyeSpan {
+    left: 90% !important;
+  }
+}

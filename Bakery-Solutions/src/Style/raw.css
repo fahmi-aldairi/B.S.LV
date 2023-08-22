@@ -1,0 +1,230 @@
+accordion.cardR {
+  background-color: transparent !important;
+}
+
+/* Start Main */
+.main-container {
+  background-image: url(../images/section-bg.png);
+  margin: 5rem 0rem;
+  width: 80%;
+  border-radius: 20px;
+}
+.main-container .dropdown-menu {
+  position: static !important;
+  inset: 0px 0px 0px 0px !important;
+  margin: 0px !important;
+  transform: translate(0px, 0px) !important;
+}
+
+.main-container .logo {
+  width: 15%;
+  max-width: 85px;
+  margin: 15px 0;
+}
+.main-container .sidecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+}
+.main-container .sideList {
+  max-width: 800px;
+  background-image: url(../images/body-bg.png);
+  border-radius: 15px;
+  margin-bottom: 6rem;
+  padding: 1rem 3rem;
+  margin-left: 1rem;
+}
+
+.main-container .sideList .headList {
+  color: white;
+  font-size: 25px;
+  font-family: "Berkshire Swash", cursive;
+}
+.main-container .sideList .headList:hover {
+  color: #fff2cc;
+}
+
+.main-container .sideList .dropdown-item {
+  color: white;
+  font-family: "Berkshire Swash", cursive;
+}
+.main-container .sideList .dropdown-item:hover {
+  background-color: transparent;
+  color: #fff2cc;
+}
+
+@media (max-width: 992px) {
+  .card {
+    align-items: center;
+  }
+  .main-container .sidecontainer {
+    justify-content: center !important;
+    display: block;
+  }
+  .main-container .sideList {
+    padding: 0 10px;
+    margin-left: 0;
+    max-width: 800px;
+    margin-bottom: 1rem !important;
+  }
+  .main-container .sideList .headList {
+    font-size: 14px;
+  }
+
+  .navItemDD {
+    max-width: 50px;
+  }
+  .main-container .bigUl {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .main-container .d-grid {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .sidecontainer {
+    display: flex;
+    justify-content: start !important;
+  }
+  .main-container .sideList {
+    width: 165px;
+    max-width: 800px;
+  }
+  .main-container .sideList .headList {
+    font-size: 20px;
+  }
+  .main-container .bigUl {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+  .main-container .sideList .dropdown-item {
+    padding: 5px 10px !important;
+  }
+}
+
+/*** Product ***/
+.mainPro {
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 425px) {
+  .mainPro {
+    padding: 1rem;
+  }
+  .prdHdCon {
+    margin-top: 2rem;
+  }
+  .breadcrumb {
+    margin: 2rem 0;
+  }
+}
+
+.prdHdCon {
+  font-family: "Berkshire Swash", cursive;
+}
+.prdHdCon h6 {
+  color: #8b4403;
+}
+.prdHdCon h1 {
+  color: white;
+}
+
+.product-item {
+  transition: 0.5s;
+  background: url(../images/section-bg.png);
+}
+
+.product-item:hover {
+  background: #fff2cc !important;
+}
+
+.product-item:hover * {
+  color: var(--light);
+}
+
+.product-item:hover .border-primary {
+  border-color: var(--light) !important;
+}
+
+.product-item .product-overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.product-item h3 {
+  font-family: "Berkshire Swash", cursive;
+  color: #8b4403;
+}
+.product-item:hover .product-overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.eyeBtn:hover {
+  color: #fff2cc !important;
+  background-color: #fff2cc !important;
+  border-color: #fff2cc !important;
+}
+
+/* End Main */
+.accordion-header button {
+  background-color: #ffd96684 !important;
+  color: #8b4403 !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.accordion-body {
+  background: url(../images/body-bg.png);
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #fff2cc;
+}
+.product-item {
+  border-radius: 15px 0;
+}
+.product-img {
+  border-radius: 15px 0 0 0;
+}
+
+.SubCatBTN {
+  border: 0 !important;
+  text-transform: capitalize !important;
+  background-color: transparent;
+  color: #fff2cc;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.SubCatBTN:hover {
+  color: white;
+}
+
+.submenu .liCont {
+  color: #fff2cc;
+  font-size: 18px;
+}
+
+.submenu .liCont input {
+  width: 40px;
+  border-radius: 5px;
+  background-color: #fff2cc;
+  margin-right: 5px;
+}

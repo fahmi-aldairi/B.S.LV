@@ -1,0 +1,419 @@
+/* Start main */
+body {
+  background-image: url(../images/body-bg.png);
+}
+/* main .hero-overlay {
+  position: relative;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+} */
+
+@media (max-width: 487px) {
+  main .hero-overlay {
+    width: 100%;
+    height: 45vh;
+  }
+
+  main .hero-overlay #carouselExampleIndicators {
+    height: 45vh;
+  }
+  main .hero-overlay .carousel-inner img {
+    height: 45vh;
+  }
+}
+main .sec-lable div {
+  width: 15rem;
+  height: 4rem;
+  background-color: #fff2cc;
+  opacity: 80%;
+  border-radius: 0 15px 15px 0;
+  margin: 5rem 0;
+}
+main .sec-lable div p {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 30px;
+  margin: auto;
+}
+
+/* Start Calc-Service  */
+.Calc-serv {
+  background-image: url(../images/section-bg.png);
+}
+.Calc-serv .bread-cont .bread-imgs .Vec {
+  top: 4px;
+  left: -5px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec1 {
+  top: 25px;
+  left: 20px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec2 {
+  left: 70px;
+  top: 63px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec3 {
+  top: 100px;
+  left: 112px;
+}
+.bread-cont {
+  padding: 9rem;
+}
+
+.bread-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.bread-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.bread-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.Croissants-cont {
+  padding: 0;
+}
+.Croissants-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.Croissants-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.Croissants-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+.croissant {
+  width: 200px;
+  rotate: 10deg;
+}
+.cake-cont {
+  padding: 9rem;
+}
+.cake-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.cake-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.cake-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.Calc-serv .cake-cont .cake-imgs .cake {
+  width: 200px;
+  top: -6px;
+  left: -5px;
+}
+
+.Croissants-img {
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 1024px) {
+  .bread-imgs {
+    left: -65px;
+  }
+}
+@media (max-width: 768px) {
+  .bread-imgs {
+    left: -140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bread-imgs,
+  .cake-imgs,
+  .Croissants-img {
+    display: none;
+  }
+}
+/* End Calc-Service  */
+/* Start Supplier */
+main .Our-Supplier {
+  color: #fff2cc;
+  font-size: 50px;
+  font-family: "Berkshire Swash", cursive;
+}
+main .Supplier img {
+  background-image: url(../images/Ellipse3.png);
+  background-size: cover;
+  width: 200px;
+  margin-bottom: 4rem;
+}
+main .Supplier .circ-d .circ-S {
+  color: #fff2cc;
+  text-align: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff2cc;
+  border-radius: 50%;
+  top: -47px;
+  left: 75px;
+}
+main .Supplier .hr-d hr {
+  width: 64rem;
+  height: 3px;
+  color: white;
+  top: -200px;
+  right: 137px;
+}
+
+@media (max-width: 1400px) {
+  main .Supplier .hr-d hr {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .Supplier .hr-d hr {
+    width: 43rem;
+  }
+}
+@media (max-width: 992px) {
+  main .Supplier .hr-d hr {
+    display: none;
+  }
+  .Supplier {
+    justify-content: center !important;
+  }
+}
+main .Supplier button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  align-self: center;
+  margin: 1rem 0;
+}
+main .Supplier p {
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.Supplier {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 489px) {
+  .Supplier {
+    justify-content: center;
+  }
+  .wheat,
+  .spread,
+  .olive {
+    margin-bottom: 3rem;
+  }
+}
+
+/* End Supplier */
+/* Start Partners */
+main .partners {
+  color: #fff2cc;
+  font-size: 50px;
+  font-family: "Berkshire Swash", cursive;
+}
+main .partners p {
+  font-size: 20px;
+}
+main .partners .part-con {
+  background-image: url(../images/section-bg.png);
+}
+/* End Partners */
+/* Start stats */
+.stats {
+  background-image: url(../images/dasda.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 8rem;
+}
+
+/* Start progress */
+.mt-100 {
+  margin-top: 200px;
+  margin-bottom: 3rem;
+}
+.progress {
+  width: 150px;
+  height: 150px !important;
+  float: left;
+  line-height: 150px;
+  background: transparent !important;
+  margin: 20px;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress.blue .progress-bar {
+  border-color: #8b4403;
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar {
+  border-color: #8b4403;
+}
+.progress.yellow .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+.progress.yellow .progress-left .progress-bar {
+  animation: none;
+}
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+.homeBTN:hover{
+  background-color: #8b4403;
+  color: #fff2cc;
+}

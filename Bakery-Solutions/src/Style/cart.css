@@ -1,0 +1,58 @@
+.login-contt {
+  background-image: url(../../images/section-bg.png);
+  margin: 5rem 0rem;
+}
+.cardd {
+  background-color: transparent !important;
+}
+.f-c {
+  background-color: transparent !important;
+}
+
+.login-btnn {
+  background-image: linear-gradient(to right, #000 0%, #000 50%, #d1d1d1 100%);
+  padding: 12px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  box-shadow: 0 0 5px #000;
+}
+
+.login-btnn:hover {
+  background-position: right center;
+}
+
+.tableHeadd::after {
+  content: "";
+  width: calc(100% - 100px);
+  height: 2px;
+  background: #8b4403;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.Subtotal::after {
+  content: "";
+  width: calc(100% - 100px);
+  height: 2px;
+  background: #8b4403;
+  position: absolute;
+  right: 0;
+  bottom: 55px;
+}
+
+.priceTot::after {
+  content: "";
+  width: 15%;
+  height: 2px;
+  background: #8b4403;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}

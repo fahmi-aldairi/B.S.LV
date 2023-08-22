@@ -1,0 +1,71 @@
+.first-nav {
+  background-color: #fff2cc;
+}
+.SignIn {
+  color: #8b4403;
+}
+.SignIn:hover {
+  color: #fff2cc;
+}
+#user-logo:hover {
+  color: #0000008c;
+}
+.fa-cart-shopping:hover {
+  color: #0000008c;
+}
+
+.SearchBox {
+  background-color: #1c202280 !important  ;
+  color: white !important;
+}
+.Searchicon {
+  background-color: #1c202280 !important;
+}
+.ndNav {
+  background-color: #ffd966;
+  height: 3rem;
+  display: flex;
+}
+.SearchBox::placeholder {
+  color: white !important;
+}
+.ndNav a {
+  color: #8b4403 !important;
+}
+.ndNav a:hover {
+  color: #0000008c !important;
+}
+.ndNav .dropdown-menu {
+  background-color: #fff2cc !important;
+}
+.phone-Navbar {
+  background-color: #fff2cc;
+}
+@media (min-width: 992px) {
+  .phone-Navbar {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .first-nav1,
+  .ndNav {
+    display: none !important;
+  }
+}
+.phone-Navbar a {
+  color: #8b4403 !important;
+  font-weight: bold;
+}
+
+.phone-Navbar .navbar-toggler {
+  background-color: transparent;
+  border: 1px solid #8b4403 !important ;
+}
+.phone-Navbar .navbar-toggler:focus {
+  color: #8b4403;
+  box-shadow: 0 0 0 0.25rem;
+}
+
+.phone-Navbar .navbar-collapse {
+  padding: 0 30px;
+}

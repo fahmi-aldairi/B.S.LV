@@ -1,0 +1,28 @@
+/* Start Footer */
+footer {
+  background-color: #fff2cc;
+}
+
+footer .group1 {
+  padding: 0 10% 1rem 10%;
+}
+
+footer section span {
+  color: #8b4403;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer section p {
+  color: #8b4403;
+}
+footer hr:not([size]) {
+  color: #8b4403;
+  height: 2px;
+}
+footer a {
+  color: #8b4403;
+}
+footer .Copyright {
+  color: #8b4403;
+}
+/* End Footer */

@@ -1,0 +1,181 @@
+.AboutCont {
+  background-image: url(../images/body-bg.png);
+  background-position: center;
+  background-size: cover;
+  font-family: "Berkshire Swash", cursive;
+  z-index: -5;
+}
+
+.page-header {
+  margin-bottom: 6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/assortment-bread-loaves-wood.jpg) center center no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  font-family: "Berkshire Swash", cursive;
+}
+@media (max-width: 769px) {
+  .page-header {
+    min-height: 30vh;
+  }
+}
+
+.banner {
+  background: url(../images/wheat3.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 35px;
+  bottom: 450px;
+  z-index: 99;
+}
+.back-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-medium {
+  font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+  font-weight: 500 !important;
+}
+
+.para {
+  color: #fff2cc;
+}
+
+/*** Button ***/
+.btn {
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #f7f7f7;
+}
+.btn:hover {
+  color: #f7f7f7 !important;
+}
+
+.btn-secondary,
+.btn-outline-secondary:hover {
+  color: #fff2cc;
+  background-color: #8b4403 !important;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+/*** Section Title ***/
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-image: url(../images/body-bg.png);
+  background-position: center;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 80px);
+  height: 2px;
+  top: 5px;
+  left: -40px;
+  background: #fff2cc;
+  z-index: -1;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 120px);
+  height: 2px;
+  bottom: 6px;
+  left: -60px;
+  background: #fff2cc;
+  z-index: -1;
+}
+
+.section-title.text-start::before {
+  width: calc(100% + 40px);
+  left: 0;
+}
+
+.section-title.text-start::after {
+  width: calc(100% + 60px);
+  left: 0;
+}
+
+/*** About ***/
+.about-experience {
+  background-color: #fff2cc;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -16px;
+  bottom: -19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 769px) {
+  .about-experience {
+    right: -11px !important;
+    bottom: -14px !important;
+  }
+}
+
+/*** Team ***/
+.team-item {
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+  background-color: #fff2cc;
+}
+
+.team-item h5,
+.team-item p {
+  color: #8b4403;
+}
+
+.team-item .btn {
+  border-color: transparent;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+}
+.drItem:hover{
+  color: #8b4403 !important;
+}
