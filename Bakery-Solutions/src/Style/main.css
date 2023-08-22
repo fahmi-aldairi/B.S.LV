@@ -2,13 +2,6 @@
 body {
   background-image: url(../images/body-bg.png);
 }
-/* main .hero-overlay {
-  position: relative;
-  background-image: url(../images/hero.png);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-} */
 
 @media (max-width: 487px) {
   main .hero-overlay {
@@ -38,28 +31,31 @@ main .sec-lable div p {
   margin: auto;
 }
 
+.containerSlider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 242, 204, 0.21);
+  font-family: "Berkshire Swash", cursive;
+  padding: 1rem;
+  color: #793c03;
+  text-align: center;
+  backdrop-filter: blur(1.5px);
+  border-radius: 15px 0 15px 0;
+}
+
 /* Start Calc-Service  */
 .Calc-serv {
   background-image: url(../images/section-bg.png);
 }
-.Calc-serv .bread-cont .bread-imgs .Vec {
-  top: 4px;
-  left: -5px;
-}
-.Calc-serv .bread-cont .bread-imgs .vec1 {
-  top: 25px;
-  left: 20px;
-}
-.Calc-serv .bread-cont .bread-imgs .vec2 {
-  left: 70px;
-  top: 63px;
-}
-.Calc-serv .bread-cont .bread-imgs .vec3 {
-  top: 100px;
-  left: 112px;
-}
 .bread-cont {
-  padding: 9rem;
+  padding: 9rem 0;
+}
+.Calc-serv .bread-cont .bread-imgs .bread {
+  width: 250px;
+  top: -20px;
+  left: -15px;
 }
 
 .bread-cards h1 {
@@ -121,7 +117,7 @@ main .sec-lable div p {
   rotate: 10deg;
 }
 .cake-cont {
-  padding: 9rem;
+  padding: 9rem 0;
 }
 .cake-cards h1 {
   color: #8b4403;
@@ -158,16 +154,6 @@ main .sec-lable div p {
 .Croissants-img {
   display: flex;
   justify-content: end;
-}
-@media (max-width: 1024px) {
-  .bread-imgs {
-    left: -65px;
-  }
-}
-@media (max-width: 768px) {
-  .bread-imgs {
-    left: -140px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -413,7 +399,7 @@ main .partners .part-con {
   }
 }
 
-.homeBTN:hover{
+.homeBTN:hover {
   background-color: #8b4403;
   color: #fff2cc;
 }

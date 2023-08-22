@@ -254,7 +254,7 @@ export function Partners() {
                             >
                               <IconButton ripple={true} color="green">
                                 {/* <i className="fa-regular fa-pen-to-square"></i> */}
-                                <i class="fa-solid fa-info"></i>
+                                <i className="fa-solid fa-info"></i>
                               </IconButton>
                             </Link>
                           </Typography>

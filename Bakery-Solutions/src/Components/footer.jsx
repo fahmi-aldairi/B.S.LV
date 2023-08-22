@@ -31,8 +31,20 @@ function Footer() {
               <span>Email</span>
               <br />
               <hr />
-              BakerySol@mail.com <br />
-              BakerySol@mail.Org
+              <a
+                href="mailto:BakerySol@mail.com"
+                style={{ textDecoration: "none" }}
+              >
+                BakerySol@mail.com
+              </a>{" "}
+              <br />
+              <a
+                href="mailto: BakerySol@mail.Org"
+                style={{ textDecoration: "none" }}
+              >
+                {" "}
+                BakerySol@mail.Org
+              </a>
             </p>
           </div>
           <div className="d-lg-block">
@@ -41,13 +53,26 @@ function Footer() {
               <br />
             </p>
             <hr />
-            <a href="#">
+            <a
+              href="https://www.instagram.com/magnoliabakery/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="w-25" src={instagram} alt="#" />
             </a>
-            <a href="#" className="mx-2">
+            <a
+              href="https://web.facebook.com/MagnoliaBakery/?locale=ar_AR&_rdc=1&_rdr"
+              className="mx-2"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="w-25" src={facebook} alt="#" />
             </a>
-            <a href="#">
+            <a
+              href="https://twitter.com/magnoliabakery"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="w-25" src={twitter} alt="#" />
             </a>
           </div>

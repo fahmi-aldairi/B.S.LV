@@ -2,6 +2,8 @@ import {
   HomeIcon,
   TableCellsIcon,
   ArrowRightOnRectangleIcon,
+  CircleStackIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Users, EditUsers, AddPitches } from "@/pages/dashboard";
 import { SignIn } from "@/pages/auth";
@@ -29,13 +31,13 @@ export const routes = [
         element: <Home />,
       },
       {
-        icon: <TableCellsIcon {...icon} />,
+        icon: <UserGroupIcon {...icon} />,
         name: "Users",
         path: "/Users",
         element: <Users />,
       },
       {
-        icon: <TableCellsIcon {...icon} />,
+        icon: <CircleStackIcon {...icon} />,
         name: "Products",
         path: "/products",
         element: <Product />,
