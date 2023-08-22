@@ -36,7 +36,7 @@ const BackToTopButton = () => {
       <HashLink
         to="#"
         className="btn btn-lg btn-lg-square rounded-circle back-top"
-        style={{ backgroundColor: "#FFF2CC" }}
+        style={{ backgroundColor: "#FFF2CC", border: "solid 1px #8b4403" }}
         onClick={handleClick}
       >
         <i className="fa-solid fa-arrow-up" style={{ color: "#8b4403" }} />
