@@ -116,14 +116,6 @@ function Nav() {
                     </HashLink>
                   </Button>
                 )}
-                {/* <Button variant="outline-secondary">
-                  <HashLink
-                    className="SignIn mx-2 fw-bold text-decoration-none"
-                    to="/login/#"
-                  >
-                    Sign-Up
-                  </HashLink>
-                </Button> */}
               </div>
             </div>
           </div>
@@ -140,51 +132,11 @@ function Nav() {
                     Home
                   </Link>
                 </li>
-                {/* <li className="nav-item dropdown me-5">
-                  <Link
-                    className="nav-link dropdown-toggle fw-bold"
-                    to="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services
-                  </Link>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Calc-Service
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Raw Materials
-                      </Link>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                  </ul>
-                </li> */}
-                {/* <li className="nav-item nav-item-5 me-5">
-                  <Link className="nav-link fw-bold" to="Serv">
-                    Services
-                  </Link>
-                </li> */}
                 <li className="nav-item nav-item-5 me-5">
                   <Link className="nav-link fw-bold" to="Raw2">
                     Raw Materials
                   </Link>
                 </li>
-                {/* <li className="nav-item nav-item-5 me-5">
-                  <Link className="nav-link fw-bold" to="Raw">
-                    Calculator
-                  </Link>
-                </li> */}
                 <li className="nav-item nav-item-2 me-5">
                   <Link className="nav-link fw-bold" to="about">
                     About-Us
@@ -270,46 +222,6 @@ function Nav() {
                     Contact-Us
                   </Link>
                 </li>
-                {/* <li className="nav-item dropdown">
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services
-                  </Link>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Calc-Service
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Raw Materials
-                      </Link>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="#">
-                        Something else here
-                      </Link>
-                    </li>
-                  </ul>
-                </li> */}
-                {/* <li className="nav-item">
-                  <Link className="nav-link" to="/Serv/#">
-                    Services
-                  </Link>
-                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link" to="/Raw2/#">
                     Raw Materials
@@ -331,9 +243,6 @@ function Nav() {
                   </>
                 )}
                 <li className="nav-item">
-                  {/* <Link className="nav-link" to="/login/#">
-                    Sign-In
-                  </Link> */}
                   {!auth ? (
                     <>
                       <Link className="nav-link" to="/login/#">

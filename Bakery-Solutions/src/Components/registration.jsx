@@ -148,11 +148,6 @@ function Reg() {
       SetErrorMsg(notifyErr());
     }
 
-    // norify
-    // if (user) {
-    //   SetErrorMsg(notifyErr());
-    //   return;
-    // }
     console.log(user);
   };
 

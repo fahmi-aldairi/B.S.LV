@@ -151,8 +151,8 @@ function Raw2() {
       }
     };
 
-      fetchData();
-    }, []);
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const stValue = (page - 1) * 6;
@@ -176,17 +176,6 @@ function Raw2() {
     const newArray = filtereddata.slice(stValue, ndValue);
     setPerPage(newArray);
   }, [data, page, selectedCat, maxPrice, minPrice]);
-  ////////////////////////////////////////////
-
-  // const AddWishList = (perPage) => {
-  //   const existingWishList = localStorage.getItem("wishList");
-  //   if (existingWishList) {
-  //     const list = JSON.parse(existingWishList);
-  //     const itemIndex = list.findIndex(
-  //       (item) => item.product_id === perPage.product_id
-  //     );
-  //   }
-  // };
 
   ////////////////////////////////////////////
   const addToCart = async (data) => {
@@ -544,12 +533,6 @@ function Raw2() {
                             onClick={() => addToCart(data)}
                           >
                             <i className="fa fa-shopping-cart" />
-                          </button>
-                          <button
-                            className="btn btn-outline-dark btn-square"
-                            // onClick={() => AddWishList(perPage)}
-                          >
-                            <i className="far fa-heart" />
                           </button>
                           <Link
                             className="btn btn-outline-dark btn-square"

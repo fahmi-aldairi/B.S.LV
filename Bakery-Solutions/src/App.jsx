@@ -1,4 +1,3 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./Components/nav";
 import Main from "./Components/main";
