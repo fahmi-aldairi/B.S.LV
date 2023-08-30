@@ -258,14 +258,6 @@ function About() {
           </div>
         </div>
         {/* Team End */}
-        {/* Back to Top */}
-        {/* <a
-          href="#"
-          className="btn btn-lg btn-lg-square rounded-circle back-to-top"
-          style={{ backgroundColor: "#8b4403" }}
-        >
-          <img src={ArrUP} alt="#" style={{ width: "30px" }} />
-        </a> */}
       </div>
     </>
   );

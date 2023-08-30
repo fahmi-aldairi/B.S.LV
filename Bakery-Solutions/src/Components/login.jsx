@@ -101,13 +101,7 @@ function Login() {
       SetErrorMsg(notifyErr());
     }
 
-    // norify
-    // if (user) {
-    //   SetErrorMsg(notifyErr());
-    //   return;
-    // }
     console.log(user);
-    // window.location.reload();
   };
 
   return (

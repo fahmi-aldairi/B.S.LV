@@ -341,26 +341,6 @@ function Cart() {
                       </>
                     )}
                     <div className="d-flex flex-column">
-                      {/* <div
-                        className="d-flex flex-column my-5"
-                        style={{ width: 250 }}
-                      >
-                        <label htmlFor="story" style={{ color: "#8b4403" }}>
-                          Special instructions{" "}
-                        </label>
-                        <textarea
-                          id="story"
-                          name="story"
-                          rows={5}
-                          cols={33}
-                          className="mt-2"
-                          style={{
-                            backgroundColor: "#d9d9d96b",
-                            border: "1px solid #8b4403",
-                          }}
-                          defaultValue={""}
-                        />
-                      </div> */}
                       <div className="d-flex flex-row mb-4 justify-content-end mt-lg-5 mb-5">
                         <button className="login-btn me-5" type="button">
                           <HashLink

@@ -50,6 +50,13 @@ function Nav() {
     Swal.fire({
       title: "<strong>You have successfully been logged out</strong>",
       text: "Thank You!",
+      position: "top",
+      icon: "success",
+      iconColor: "#FFD966",
+      background: "#FFF2CC",
+      color: "#8B4403",
+      showConfirmButton: false,
+      timer: 2000,
     });
     setAuth(false);
     navigate("/");

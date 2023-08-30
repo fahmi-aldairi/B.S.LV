@@ -7,7 +7,6 @@ import Cards from "react-credit-cards-2";
 import "react-credit-cards-2/dist/es/styles-compiled.css";
 import Swal from "sweetalert2";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import CardsUserProfile from "./SubComponents/cardsUserProfile";
 
 const notifySucess = () => {
@@ -24,14 +23,12 @@ const notifySucess = () => {
 };
 
 function Profile() {
-  const navigate = useNavigate();
   const [tab, setTab] = useState("view");
   const [newpasswordMode, setnewpasswordMode] = useState(true);
   const [passwordModeCon, setPasswordModeCon] = useState(true);
   const [requiredName, setrequiredName] = useState(false);
   const [requiredemail, setrequiredemail] = useState(false);
   const [requiredPhone, setrequiredPhone] = useState(false);
-  const [requiredNewPass, setRequiredNewPass] = useState(false);
   const [requiredCoPass, setRequiredCoPass] = useState(false);
   ///////////////////////////////////////////////////
   const showConfirmationPrompt = () => {
@@ -350,14 +347,7 @@ function Profile() {
       }
     }
   };
-  ///////////////////////////////////////////////////
-  // console.log("Old", OldData);
-  // console.log("New", newData);
-  ///////////////////////////////////////////////////
-  ///////////////////////////////////////////////////
-  ///////////////////////////////////////////////////
-  ///////////////////////////////////////////////////
-  ///////////////////////////////////////////////////
+
   return (
     <>
       <main className="container-fluid d-flex justify-content-center">
