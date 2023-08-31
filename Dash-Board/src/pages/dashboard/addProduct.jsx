@@ -116,6 +116,7 @@ export function AddProduct() {
       notifyfaild();
     }
   };
+  console.log(formData);
 
   return (
     <>

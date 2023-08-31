@@ -25,6 +25,7 @@ const AddNewProduct = async (req, res) => {
     product_Weight,
     product_price,
     charge,
+    discount,
   } = req.body;
 
   const namelower = product_name.toLowerCase();
@@ -44,7 +45,7 @@ const AddNewProduct = async (req, res) => {
     return res.status(400).send("No file provided");
   } else {
     const query =
-      "INSERT INTO public.products (partner_id, image, category, sub_category, product_name, product_description, product_count, product_Weight, product_price, charge) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9,$10) RETURNING *";
+      "INSERT INTO public.products (partner_id, image, category, sub_category, product_name, product_description, product_count, product_Weight, product_price, charge,discount) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9,$10,$11) RETURNING *";
     const values = [
       partner_id,
       file.filename,
@@ -56,6 +57,7 @@ const AddNewProduct = async (req, res) => {
       product_Weight,
       product_price,
       charge,
+      discount,
     ];
 
     try {
