@@ -98,12 +98,22 @@ function Raw2() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:5000/getAllProducts"
-        );
-        const result = response.data;
-        setData(result);
-        setPaginateCount(result.length);
+        if (localStorage?.getItem("selectedMainCat")) {
+          const mainCat = localStorage?.getItem("selectedMainCat");
+          const response = await axios.get(
+            `http://localhost:5000/get${mainCat}Products`
+          );
+          const result = response.data;
+          setData(result);
+          setPaginateCount(result.length);
+        } else {
+          const response = await axios.get(
+            "http://localhost:5000/getAllProducts"
+          );
+          const result = response.data;
+          setData(result);
+          setPaginateCount(result.length);
+        }
       } catch (error) {
         console.error("Error retrieving data:", error);
       }
@@ -283,6 +293,10 @@ function Raw2() {
     };
   }, []);
 
+  window.onbeforeunload = function () {
+    console.log("jjj");
+    localStorage.removeItem("selectedMainCat");
+  };
   ////////////////////////////////////////////
 
   return (

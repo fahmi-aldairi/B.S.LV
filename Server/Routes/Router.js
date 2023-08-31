@@ -93,9 +93,9 @@ router.get("/coSub", productController.cookiesSubCat);
 router.get("/allSub", productController.allPurposeSubCat);
 router.get("/product/:id", productController.handleGetProductById);
 router.put("/getProductPerPage", productController.handleprdperpage);
-router.get("/getbProducts", productController.getBreadProducts);
-router.get("/getCKProducts", productController.getCakeProducts);
-router.get("/getCOProducts", productController.getCookiesProducts);
+router.get("/getbreadProducts", productController.getBreadProducts);
+router.get("/getcakeProducts", productController.getCakeProducts);
+router.get("/getcookiesProducts", productController.getCookiesProducts);
 router.put(
   "/delete_Product/:id",
   verifyJWT.verifyJWT,
