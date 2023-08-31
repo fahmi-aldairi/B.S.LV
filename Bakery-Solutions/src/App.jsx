@@ -47,6 +47,7 @@ function App() {
                 <Route path="Pay" element={<Pay />} />
                 <Route path="profile" element={<Profile />} />
                 <Route path="policy" element={<Policy />} />
+                <Route path="/*" element={<ErrorPage />} />
               </Routes>
               <Footer />
             </LangProvider>
