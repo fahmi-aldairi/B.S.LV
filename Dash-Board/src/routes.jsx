@@ -48,12 +48,12 @@ export const routes = [
         path: "/Partners",
         element: <Partners />,
       },
-      {
-        icon: <TableCellsIcon {...icon} />,
-        name: "Contact Us",
-        path: "/ContactUs",
-        element: <ContactUs />,
-      },
+      // {
+      //   icon: <TableCellsIcon {...icon} />,
+      //   name: "Contact Us",
+      //   path: "/ContactUs",
+      //   element: <ContactUs />,
+      // },
     ],
   },
   {

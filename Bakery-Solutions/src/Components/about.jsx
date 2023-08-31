@@ -109,7 +109,8 @@ function About() {
                     <img className="img-fluid mb-4" src={img4} alt="" />
                     <h5 className="mb-3 para">Dedicated Services</h5>
                     <span className="text-light">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
+                      Exemplary customer service delights clients, forging
+                      lasting bonds through genuine care and efficiency.
                     </span>
                   </div>
                   <div className="col-sm-6">
@@ -140,8 +141,8 @@ function About() {
                       We Sell Best Dairy Products
                     </h2>
                     <p className="text-white mb-4">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna dolore erat amet
+                      Finest quality fresh products, harvested at peak, ensure
+                      an exquisite culinary experience.
                     </p>
                   </div>
                 </div>
@@ -156,8 +157,8 @@ function About() {
                       We Deliver Fresh Mild Worldwide
                     </h2>
                     <p className="text-white mb-4">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna dolore erat amet
+                      Indulge in a global symphony of bakery delights, savoring
+                      the world's finest confections.
                     </p>
                   </div>
                 </div>

@@ -29,6 +29,30 @@ export function Home() {
   }, []);
   // console.log(userCount);
 
+  const [cash, setCash] = useState(0);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:5000/AllPays",
+          config
+        );
+        const totalCash = response.data.reduce(
+          (sum, item) => sum + Number(item.total_paid),
+          0
+        );
+        setCash(totalCash);
+      } catch (error) {
+        console.error("Error retrieving data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(cash);
+
   const [productCount, setProductCount] = useState(0);
   useEffect(() => {
     const fetchData = async () => {
@@ -46,7 +70,6 @@ export function Home() {
 
     fetchData();
   }, []);
-  // console.log(productCount);
 
   return (
     <>
@@ -132,10 +155,8 @@ export function Home() {
           >
             <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <p className="mt-4 text-xl font-extrabold text-black">Users</p>
-          <p className="mt-2 pl-5 text-2xl font-bold text-black">
-            {/* {usersData.length} */}
-          </p>
+          <p className="mt-4 text-xl font-extrabold text-black">Income</p>
+          <p className="mt-2 pl-5 text-2xl font-bold text-black">{cash} Jd</p>
           <button className="mt-6 h-10 w-28  rounded-lg bg-black text-sm font-bold text-white shadow-lg hover:bg-gray-700">
             <Link to={"/dashboard/booking"}>More info</Link>
           </button>

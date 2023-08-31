@@ -310,8 +310,13 @@ function Reg() {
                         className="form-check-label"
                         htmlFor="defaultCheck1"
                       >
-                        Accept 'Terms &amp; Conditions, Privacy Policy for using
-                        this application
+                        <HashLink
+                          style={{ textDecoration: "none", color: "#8B4403" }}
+                          to="/policy/#"
+                        >
+                          Accept 'Terms &amp; Conditions, Privacy Policy for
+                          using this application
+                        </HashLink>
                       </label>
                     </div>
                   </div>

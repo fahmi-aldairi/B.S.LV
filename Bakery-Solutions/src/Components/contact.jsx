@@ -6,6 +6,8 @@ import Chip from "@mui/material/Chip";
 import HomeIcon from "@mui/icons-material/Home";
 import CallIcon from "@mui/icons-material/Call";
 import "../Style/contact.css";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const WhiteSeparator = styled("span")({
   backgroundColor: "#fff",
@@ -26,6 +28,27 @@ const StyledBreadcrumb = styled(Chip)(({ theme }) => ({
 }));
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mtzyz89",
+        "template_exotuzl",
+        form.current,
+        "3x69BC1cndWQidvvO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div className="container-fluid page-header py-6 d-flex flex-column-reverse justify-content-center ">
@@ -63,12 +86,7 @@ function Contact() {
           </div>
           <div className="row g-0 justify-content-center">
             <div className="col-lg-8">
-              <p className="text-center mb-4 text-light">
-                The contact form is currently inactive. Get a functional and
-                working contact form with Ajax &amp; PHP in a few minutes. Just
-                copy and paste the files, add a little code and you're done{" "}
-              </p>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
@@ -77,9 +95,11 @@ function Contact() {
                         className="form-control FC"
                         id="name"
                         placeholder="Name"
+                        name="user_name"
+                        required
                       />
                       <label className="LFC" htmlFor="name">
-                        Name
+                        Full-Name
                       </label>
                     </div>
                   </div>
@@ -90,6 +110,8 @@ function Contact() {
                         className="form-control FC"
                         id="email"
                         placeholder="Email"
+                        name="user_email"
+                        required
                       />
                       <label className="LFC" htmlFor="email">
                         Email
@@ -103,6 +125,8 @@ function Contact() {
                         className="form-control FC"
                         id="subject"
                         placeholder="Subject"
+                        name="subject"
+                        required
                       />
                       <label className="LFC" htmlFor="subject">
                         Subject
@@ -117,6 +141,7 @@ function Contact() {
                         id="message"
                         style={{ height: 200 }}
                         defaultValue={""}
+                        name="message"
                       />
                       <label className="LFC" htmlFor="message">
                         Message

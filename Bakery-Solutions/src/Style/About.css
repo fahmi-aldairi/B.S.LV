@@ -15,6 +15,15 @@
   min-height: 70vh;
   font-family: "Berkshire Swash", cursive;
 }
+.page-headerPoliciy {
+  margin-bottom: 2rem;
+  background: linear-gradient(#8b450370, #8b450370),
+    url(../images//Privacypolicy.jpg) center center no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  font-family: "Berkshire Swash", cursive;
+}
 @media (max-width: 769px) {
   .page-header {
     min-height: 30vh;
@@ -176,6 +185,6 @@
   border-color: transparent;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
 }
-.drItem:hover{
+.drItem:hover {
   color: #8b4403 !important;
 }

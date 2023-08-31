@@ -16,6 +16,7 @@ import Raw2 from "./Components/raw2";
 import ProductCard from "./Components/SubComponents/card";
 import ProductDetails from "./Components/SubComponents/productdetails";
 import Testimonial from "./Components/SubComponents/testimonial";
+import Policy from "./Components/SubComponents/policy";
 import ErrorPage from "./Components/404page";
 import Pay from "./Components/pay";
 import Profile from "./Components/Profile";
@@ -45,6 +46,7 @@ function App() {
                 <Route path="ErrorPage" element={<ErrorPage />} />
                 <Route path="Pay" element={<Pay />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="policy" element={<Policy />} />
               </Routes>
               <Footer />
             </LangProvider>
