@@ -101,7 +101,7 @@ function Login() {
       SetErrorMsg(notifyErr());
     }
 
-    console.log(user);
+    // console.log(user);
   };
 
   return (

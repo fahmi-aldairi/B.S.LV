@@ -66,7 +66,7 @@ function SearchField() {
     const selectedItem = data.find(
       (item) => item.product_name === searchedItem
     );
-    console.log(selectedItem.product_id);
+    // console.log(selectedItem.product_id);
     if (selectedItem) {
       navigate(`/prodDetails/${selectedItem.product_id}`);
     }

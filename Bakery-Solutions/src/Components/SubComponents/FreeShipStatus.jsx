@@ -8,7 +8,7 @@ function FreeShipStatus(props) {
     setRoundedprice(Math.ceil(props.tillFreeShip / 10) * 10);
   }, [props]);
 
-  console.log(roundedPrice);
+  // console.log(roundedPrice);
   const progressBarStyles = {
     width: `${100 - roundedPrice}%`,
     height: "2rem",

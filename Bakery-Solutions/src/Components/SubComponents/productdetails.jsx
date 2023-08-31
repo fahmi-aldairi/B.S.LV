@@ -69,7 +69,7 @@ function ProductDetails() {
       const productIndex = cartData.findIndex(
         (item) => item.product_id === data.product_id
       );
-      console.log(productIndex !== -1);
+      // console.log(productIndex !== -1);
       if (productIndex !== -1) {
         if (cartData[0].count) {
           cartData[productIndex].count = quantity;

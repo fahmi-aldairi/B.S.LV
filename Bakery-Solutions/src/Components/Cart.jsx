@@ -118,8 +118,8 @@ function Cart() {
 
   totalToPaid = freeShip <= 0 ? subtotal : subtotal + charge;
 
-  console.log(freeShip);
-  console.log(totalToPaid);
+  // console.log(freeShip);
+  // console.log(totalToPaid);
   useEffect(() => {
     if (totalToPaid === 0) {
       localStorage.removeItem("totalPaid");
