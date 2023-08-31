@@ -151,7 +151,7 @@ function ProductDetails() {
                   <div>
                     <div className="rounded-3">
                       <div
-                        className="bg-light"
+                        className="bgProdDetails"
                         style={{ borderRadius: "15px" }}
                       >
                         <img
@@ -166,7 +166,7 @@ function ProductDetails() {
                 </div>
                 <div className="col-lg-7 h-auto rounded-3">
                   <div
-                    className="h-100 bg-light d-flex flex-column justify-content-around p-5"
+                    className="h-100 bgProdDetails d-flex flex-column justify-content-around p-5"
                     style={{ borderRadius: "15px" }}
                   >
                     <div>

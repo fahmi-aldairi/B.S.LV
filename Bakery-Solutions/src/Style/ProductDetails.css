@@ -17,7 +17,12 @@ small {
 }
 
 .detaBtn {
-  background-image: linear-gradient(to right, #8b4403 0%, #8b4403 50%, #d1d1d1 100%);
+  background-image: linear-gradient(
+    to right,
+    #8b4403 0%,
+    #8b4403 50%,
+    #d1d1d1 100%
+  );
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -31,4 +36,7 @@ small {
 
 .detaBtn:hover {
   background-position: right center;
+}
+.bgProdDetails {
+  background-image: url(../images/section-bg.png);
 }

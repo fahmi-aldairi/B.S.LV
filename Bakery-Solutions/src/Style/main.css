@@ -36,15 +36,67 @@ main .sec-lable div p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 242, 204, 0.21);
+  background-color: rgba(0, 0, 0, 0.199);
   font-family: "Berkshire Swash", cursive;
   padding: 1rem;
-  color: #793c03;
+  color: #fdfdfd;
   text-align: center;
   backdrop-filter: blur(1.5px);
   border-radius: 15px 0 15px 0;
+  width: 45%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 35px 30px -20px rgba(0, 0, 0, 0.5);
+}
+.ArrowCont {
+  position: relative;
+  left: 35%;
 }
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 /* Start Calc-Service  */
 .Calc-serv {
   background-image: url(../images/section-bg.png);
@@ -100,6 +152,13 @@ main .sec-lable div p {
   text-align: center;
   color: #ffffff;
   margin-bottom: 2rem;
+}
+#language-dropdown {
+  border: 1px solid #8b4403 !important;
+}
+#language-dropdown:hover {
+  border: 1px solid #8b450395 !important;
+  color: #8b450395 !important;
 }
 .Croissants-cards button {
   width: 100px;

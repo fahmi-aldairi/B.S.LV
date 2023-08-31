@@ -43,10 +43,15 @@ function Nav() {
     }
   };
   ////////////
+  const removeMainCat = () => {
+    localStorage.removeItem("selectedMainCat");
+  };
+  ////////////
   const navigate = useNavigate();
   const handleLogOut = (event) => {
     event.preventDefault();
     localStorage.removeItem("token");
+    removeMainCat();
     Swal.fire({
       title: "<strong>You have successfully been logged out</strong>",
       text: "Thank You!",
@@ -61,6 +66,7 @@ function Nav() {
     setAuth(false);
     navigate("/");
   };
+
   return (
     <>
       <header>
@@ -68,7 +74,7 @@ function Nav() {
         <nav className="first-nav1">
           <div className="container-fluid d-flex px-xxl-5 first-nav">
             <Link to="/">
-              <img src={logo} alt="#" />
+              <img src={logo} alt="#" onClick={removeMainCat} />
             </Link>
             <div className="container d-flex justify-content-end">
               <div className="stNavGroup container d-flex justify-content-sm-end align-items-center">
@@ -77,7 +83,11 @@ function Nav() {
                     <SearchField />
                   </div>
                 </div>
-                <Link className="SignIn fw-bold text-decoration-none" to="cart">
+                <Link
+                  className="SignIn fw-bold text-decoration-none"
+                  to="cart"
+                  onClick={removeMainCat}
+                >
                   {/* <i className="fa-solid fa-cart-shopping fs-3 me-3" /> */}
                   <IconButton
                     aria-label="cart"
@@ -97,7 +107,11 @@ function Nav() {
                 </Link>
                 {!auth ? (
                   <>
-                    <Button variant="outline-secondary" to="/">
+                    <Button
+                      variant="outline-secondary"
+                      to="/"
+                      onClick={removeMainCat}
+                    >
                       <HashLink
                         className="SignIn mx-2 fw-bold text-decoration-none"
                         to="/login/#"
@@ -128,22 +142,39 @@ function Nav() {
             <div className="navbar justify-content-center w-75 p-0">
               <ul className="navbar-nav d-flex flex-row w-100 justify-content-center">
                 <li className="nav-item nav-item-1 me-5">
-                  <Link className="nav-link fw-bold" aria-current="page" to="/">
+                  <Link
+                    className="nav-link fw-bold"
+                    aria-current="page"
+                    to="/"
+                    onClick={removeMainCat}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item nav-item-5 me-5">
-                  <Link className="nav-link fw-bold" to="Raw2">
+                  <Link
+                    className="nav-link fw-bold"
+                    to="Raw2"
+                    onClick={removeMainCat}
+                  >
                     Raw Materials
                   </Link>
                 </li>
                 <li className="nav-item nav-item-2 me-5">
-                  <Link className="nav-link fw-bold" to="about">
+                  <Link
+                    className="nav-link fw-bold"
+                    to="about"
+                    onClick={removeMainCat}
+                  >
                     About-Us
                   </Link>
                 </li>
                 <li className="nav-item nav-item-3 me-5">
-                  <Link className="nav-link fw-bold" to="contact">
+                  <Link
+                    className="nav-link fw-bold"
+                    to="contact"
+                    onClick={removeMainCat}
+                  >
                     Contact-Us
                   </Link>
                 </li>
@@ -164,6 +195,7 @@ function Nav() {
                   <Link
                     className="SignIn fw-bold text-decoration-none"
                     to="/profile/#"
+                    onClick={removeMainCat}
                   >
                     <IconButton
                       aria-label="cart"
@@ -188,8 +220,8 @@ function Nav() {
         {/* Start Phone Navbar */}
         <nav className="navbar navbar-expand-lg phone-Navbar">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="#">
-              <img className="w-75" src={logo} alt="" />
+            <Link className="navbar-brand" to="#" onClick={removeMainCat}>
+              <img className="w-75" src={logo} alt="logo" />
             </Link>
             <button
               className="navbar-toggler"
@@ -208,27 +240,48 @@ function Nav() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">
+                  <Link
+                    className="nav-link"
+                    aria-current="page"
+                    to="/"
+                    onClick={removeMainCat}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about/#">
+                  <Link
+                    className="nav-link"
+                    to="/about/#"
+                    onClick={removeMainCat}
+                  >
                     About-Us
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact/#">
+                  <Link
+                    className="nav-link"
+                    to="/contact/#"
+                    onClick={removeMainCat}
+                  >
                     Contact-Us
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Raw2/#">
+                  <Link
+                    className="nav-link"
+                    to="/Raw2/#"
+                    onClick={removeMainCat}
+                  >
                     Raw Materials
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Cart/#">
+                  <Link
+                    className="nav-link"
+                    to="/Cart/#"
+                    onClick={removeMainCat}
+                  >
                     Cart
                   </Link>
                 </li>
@@ -236,7 +289,11 @@ function Nav() {
                   <>
                     {" "}
                     <li className="nav-item">
-                      <Link className="nav-link" to="/profile/#">
+                      <Link
+                        className="nav-link"
+                        to="/profile/#"
+                        onClick={removeMainCat}
+                      >
                         Profile
                       </Link>
                     </li>
@@ -245,7 +302,11 @@ function Nav() {
                 <li className="nav-item">
                   {!auth ? (
                     <>
-                      <Link className="nav-link" to="/login/#">
+                      <Link
+                        className="nav-link"
+                        to="/login/#"
+                        onClick={removeMainCat}
+                      >
                         Sign-In
                       </Link>
                     </>

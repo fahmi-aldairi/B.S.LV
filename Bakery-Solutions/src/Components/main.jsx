@@ -31,6 +31,7 @@ function Main() {
 
   const handleMoreBtn = (value) => {
     localStorage.removeItem("selectedHome");
+    localStorage.setItem("selectedMainCat", value);
     navigate("/Raw2");
     console.log(value);
     window.scrollTo(0, 0);

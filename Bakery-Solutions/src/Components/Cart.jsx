@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import CartEmpty from "./SubComponents/CartEmpty";
 import { useContext } from "react";
 import { AuthContext } from "./Context/AuthContext";
+import FreeShipStatus from "./SubComponents/FreeShipStatus";
 
 const notifySucess = () => {
   Swal.fire({
@@ -161,27 +162,8 @@ function Cart() {
                           <>{`You're away ${freeShip} Jd from free shipping!`}</>
                         )}
                       </p>
-                      <div
-                        className="d-flex flex-row justify-content-start"
-                        style={{
-                          width: "calc(100% - 200px)",
-                          height: "2rem",
-                          backgroundColor: "#efefef",
-                          borderRadius: 10,
-                          boxShadow: "0 0 10px #8b4403",
-                        }}
-                      >
-                        <div
-                          className="position-relative"
-                          style={{
-                            width: "50%",
-                            height: "2rem",
-                            backgroundColor: "#8b4403",
-                            borderRadius: 10,
-                            boxShadow: "inset 0 0 10px #efefef",
-                          }}
-                        />
-                      </div>
+                      {/* /////// */}
+                      <FreeShipStatus tillFreeShip={freeShip} />
                     </div>
                     <div
                       className="d-flex flex-row justify-content-end position-relative"

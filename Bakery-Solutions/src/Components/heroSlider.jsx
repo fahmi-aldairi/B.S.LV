@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import hero from "../images/hero.png";
 import slider from "../images/Silder.jpg";
 import slider1 from "../images/slider1.jpg";
@@ -6,7 +7,6 @@ import slider2 from "../images/slider2.jpg";
 function HeroSlider() {
   return (
     <>
-      {" "}
       <section className="hero-overlay">
         <div
           id="carouselExampleIndicators"
@@ -47,27 +47,44 @@ function HeroSlider() {
               style={{ position: "relative" }}
             >
               <img src={hero} className="d-block w-100" alt="HeroImg" />
-              <div className="containerSlider">
-                <h1>Explor high quality products</h1>
+              <div className="containerSlider ">
+                <h1>Welcome</h1>
+                <h1>To</h1>
+                <h1>Bakery Solutions</h1>
               </div>
             </div>
             <div className="carousel-item">
               <img src={slider} className="d-block w-100" alt="HeroImg" />
               <div className="containerSlider">
                 <h1>Know About Bakery-Solutions & Our History</h1>
+                <div className="ArrowCont">
+                  <HashLink to="/about/#">
+                    <div className="arrow">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </HashLink>
+                </div>
               </div>
             </div>
             <div className="carousel-item">
               <img src={slider1} className="d-block w-100" alt="HeroImg" />
               <div className="containerSlider">
-                <h1>Know About Bakery-Solutions & Our History</h1>
+                <h1>Explore High-Quality Products & Best Prices</h1>
+                <div className="ArrowCont">
+                  <HashLink to="/Raw2/#">
+                    <div className="arrow">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </HashLink>
+                </div>
               </div>
             </div>
             <div className="carousel-item">
               <img src={slider2} className="d-block w-100" alt="HeroImg" />
-              <div className="containerSlider">
-                <h1>Know About Bakery-Solutions & Our History</h1>
-              </div>
             </div>
           </div>
           <button

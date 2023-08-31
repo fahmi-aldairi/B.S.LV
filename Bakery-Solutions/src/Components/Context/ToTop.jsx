@@ -41,7 +41,7 @@ const BackToTopButton = () => {
       >
         <i className="fa-solid fa-arrow-up" style={{ color: "#8b4403" }} />
       </HashLink>
-    )
+    ) 
   );
 };
 
