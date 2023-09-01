@@ -75,10 +75,3 @@ CREATE TABLE payments (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
--- SELECT user_id, product_id
--- FROM orders
--- WHERE to_char(created_at, 'YYYY-MM-DD HH:MI') = '2023-06-30 14:30';
-
--- SELECT user_id, product_id, to_char(created_at, 'YYYY-MM-DD HH:MI') AS formatted_datetime
--- FROM orders;
